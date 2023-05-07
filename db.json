@@ -1,0 +1,95 @@
+{
+    "cars": [
+        {
+            "id": 1,
+            "name": "Mercedes",
+            "marks": [
+                {
+                    "id": 1,
+                    "name": "sedan",
+                    "models": [
+                        {
+                            "id": 1,
+                            "name": "w210"
+                        },
+                        {
+                            "id": 2,
+                            "name": "w211"
+                        },
+                        {
+                            "id": 3,
+                            "name": "w124"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "Jeep",
+                    "models":[
+                        {
+                            "id": 1,
+                            "name": "G Class",
+                            "engine": [
+                                {
+                                    "id": 1,
+                                    "name": " 5.5-liter"
+                                },
+                                {
+                                    "id": 1,
+                                    "name": " 3.0-liter"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Bmw",
+            "marks": [
+                {
+                    "id": 1,
+                    "name": "sedan",
+                    "models": [
+                        {
+                            "id": 1,
+                            "name": "e46"
+                        },
+                        {
+                            "id": 2,
+                            "name": "e50"
+                        },
+                        {
+                            "id": 3,
+                            "name": "e60"
+                        }
+                    ]
+                }
+            ]
+            
+        },
+        {
+            "id": 3,
+            "name": "Audi",
+            "marks": [
+                {
+                    "id": 1,
+                    "name": "Coupe"
+
+                },
+                {
+                    "id": 2,
+                    "name": "Electrified"
+
+                },
+                {
+                    "id": 3,
+                    "name": "Sportbacks"
+
+                }
+            ]
+        }
+    ]
+    
+}
