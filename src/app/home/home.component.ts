@@ -19,9 +19,7 @@ export class HomeComponent {
  
   ngOnInit():void{
     this.getData()
-    
   }
-
 
   getData(){
     this.request.getData<Data[]>("http://localhost:3000/cars").subscribe((item:Data[])=>{  
@@ -36,14 +34,24 @@ export class HomeComponent {
     elem.appendChild(ul)
 
     for(let i in data){  
-      const li = this.renderer.createElement('li')
-      const span = this.renderer.createElement('span')
+      const li = this.renderer.createElement('li'),
+            span = this.renderer.createElement('span')
+
+      span.addEventListener('click', ()=>{
+        li.classList.toggle('close')
+      })
       span.innerText = data[i].name
+
       li.appendChild(span)
       ul.appendChild(li)
 
       for(let key in data[i]){
         if(Array.isArray(data[i][key])){
+          // add icon
+          const icon = this.renderer.createElement('i')
+          icon.classList.add("fa-solid", "fa-circle-chevron-down" )
+          li.prepend(icon)
+
           this.createList(data[i][key], li)
         }
 

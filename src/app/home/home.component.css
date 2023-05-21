@@ -52,3 +52,17 @@ input::placeholder{
     font-size: 18px;
     letter-spacing: 5px;
 }
+.close span+ul{
+    display: none;
+ }
+ ul span{
+     cursor: pointer;
+ }
+ .close > i{
+     transform: rotate(-90deg);
+ }
+ i{
+     transition: 0.2s;
+     font-size: 14px;
+     margin: 0 4px;
+ }
